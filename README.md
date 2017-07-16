@@ -4,7 +4,7 @@ It's a WebM video sharing site. Where you can upload WebM videos up to 40 MiB in
 
 ## Setting up
 
-Clone this repo and extract it into the Apache folder.
+Clone/download this repo and extract it into the Apache folder.
 
 Than create a MySQL database from the ```uploadit.sql``` script.
 
@@ -21,5 +21,9 @@ After that configure Apache VirtualHost:
        CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
+
+In ```/public/``` create a folder ```storage``` 
+than create a folder ```uploads``` in ```/storage/app/public/```
+after create a shortcut to the ```/storage/app/public/``` folder in the ```/public/storage/``` folder.
 
 Wola the the site is up!
